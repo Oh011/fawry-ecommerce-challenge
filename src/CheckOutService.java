@@ -38,6 +38,7 @@ public class CheckOutService implements  ICheckOutService {
 
             if(item.getProduct().getQuantity()<=0){
 
+
                 throw new ProductOutOfStockException(item.getProduct().getName());
             }
 

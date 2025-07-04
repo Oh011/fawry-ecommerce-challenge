@@ -22,8 +22,10 @@ public class Cart {
 
         if (quantity <= 0) {
 
-            System.out.println("Error: Quantity must be greater than 0.");
+
+            System.out.println("Error: Quantity must be greater than zero.");
             return;
+
         }
 
 
@@ -35,7 +37,14 @@ public class Cart {
         }
 
 
+        if(product.getQuantity()<=0){
+
+            throw new ProductOutOfStockException(product.getName());
+        }
+
+
         if (quantity > product.getQuantity()) {
+
             System.out.println("Error: Cannot add " + quantity + " x " + product.getName() +
                     ". Only " + product.getQuantity() + " in stock.");
             return;
@@ -44,6 +53,7 @@ public class Cart {
 
         items.add(new CartItem(product,quantity));
 
+        System.out.println(quantity + " x " + product.getName() + " added to cart.");
 
     }
 
