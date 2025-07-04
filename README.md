@@ -54,7 +54,7 @@ ERROR: Insufficient balance. Current: 100.0, Required: 530.0
 ERROR: Product is expired: Yogurt
 
 ===================================================================
-===== Test Case : Out of Stock Product =====
+===== Test Case 5 : Out of Stock Product =====
 ---------------------------------------------------
 ERROR: Product out of stock: Laptop
 
