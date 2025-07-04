@@ -65,5 +65,5 @@ This is a Java-based console application for the Fawry Full Stack Development In
  Test Case 5: Out of Stock Product 
 ---------------------------------------------------  
 - ERROR: Product out of stock: Laptop
-- 
+
 ---------------------------------------------------  
