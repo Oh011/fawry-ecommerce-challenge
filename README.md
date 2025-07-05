@@ -68,6 +68,7 @@ This is a Java-based console application for the Fawry Full Stack Development In
 
 ---------------------------------------------------  
 
+Test Case 6 : No Errors
 ---------------------------------------------------
 - 2 x Cheese added to cart.
 - 2 x Yogurt added to cart.
