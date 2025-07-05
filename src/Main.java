@@ -225,6 +225,7 @@ public class Main {
 
         testCase5();
 
+         testCase6();
 
     }
 }
