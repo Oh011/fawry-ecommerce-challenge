@@ -11,7 +11,11 @@ public class ReceiptPrinter {
         for (CartItem item : items){
 
             Product product=item.getProduct();
-            System.out.println(product);
+           
+            double price=product.getPrice();
+
+            System.out.println("item : "+product.getName()+" , Quantity :"+item.getQuantity()+" , price : "+
+                    price+" , total : "+price*item.getQuantity());
         }
 
         System.out.println("----------------------------------------------------------");
