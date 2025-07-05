@@ -165,6 +165,51 @@ public class Main {
     }
 
 
+     public static void testCase6() {
+
+        System.out.println("===== Test Case 6: No errors =====");
+
+        try {
+
+            Product cheese = new ShippedExpiringProduct("Cheese", 100.0, 5, 400, WeightUnit.GRAM, false);
+            Product yogurt = new ShippedExpiringProduct("Yogurt", 50.0, 6, 300, WeightUnit.GRAM, false);
+
+
+            Product tv = new ShippedProduct("TV", 200.0, 2, 2.5, WeightUnit.KILOGRAM);
+            Product fan = new ShippedProduct("Fan", 120.0, 3, 1.2, WeightUnit.KILOGRAM);
+
+            // Regular Products (no shipping, no expiration)
+            Product scratchCard = new Product("Scratch Card", 50.0, 10);
+            Product ebook = new Product("E-Book", 80.0, 4);
+
+            System.out.println("---------------------------------------------------");
+
+            Customer customer = new Customer("Omar", 2000.0);
+
+            Cart cart = new Cart();
+            cart.add(cheese, 2);
+            cart.add(yogurt, 2);
+            cart.add(tv, 1);
+            cart.add(fan, 1);
+            cart.add(scratchCard, 2);
+            cart.add(ebook, 1);
+
+            System.out.println("---------------------------------------------------");
+
+            IShipmentService shipmentService = new ShipmentService(new ShipmentWeightCalculator());
+            ReceiptPrinter printer = new ReceiptPrinter();
+            ICheckOutService checkoutService = new CheckOutService(shipmentService, printer);
+            checkoutService.checkOut(customer, cart);
+
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        System.out.println();
+        System.out.println("===================================================================");
+    }
+
+
     public static void main(String[] args) {
 
 
