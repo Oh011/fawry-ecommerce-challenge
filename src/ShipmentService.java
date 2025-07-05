@@ -19,7 +19,7 @@ public class ShipmentService implements IShipmentService {
         double totalWeight=calculator.calculate(items);
 
 
-        System.out.println("Total package weight : "+totalWeight+"g");
+        System.out.println("Total package weight : "+totalWeight+" kg");
 
     }
 
