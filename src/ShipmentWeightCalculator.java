@@ -13,7 +13,8 @@ public class ShipmentWeightCalculator {
             Shippable shippableItem=(Shippable) item.getProduct();
 
 
-            System.out.println(shippableItem+" , weight : "+shippableItem.getWeight()+" "+shippableItem.getWeightUnit().getSymbol());
+                        System.out.println(item.getQuantity()+" X "+shippableItem.getName() +" , weight : "+shippableItem.getWeight()+" "+
+                    shippableItem.getWeightUnit().getSymbol());
 
 
 
