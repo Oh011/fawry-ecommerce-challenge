@@ -11,6 +11,30 @@ This is a Java-based console application for the Fawry Full Stack Development In
 - Checkout logic with subtotal, shipping fees, and final amount
 - Edge case test coverage in `Main.java`
 
+
+## Test Cases
+
+
+## Test Case 1 :
+
+![Logo](TestCase(1).png)
+
+
+## Test Case 2 :
+
+![Logo](TestCase2.png)
+
+
+
+## Test Case 3 :
+
+![Logo](TestCase3.png)
+
+
+
+-  Important: I uploaded wrong images (Task 2 images) accidentally Please refer only to the image currently displayed in Readme which correctly belongs to Task 1.
+
+
 ### ✅ Sample Output
 
 ---------------------------------------------------
